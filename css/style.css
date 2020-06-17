@@ -1,0 +1,272 @@
+:root {
+  --primary-color: #0074d9;
+  --secondary-color: #001f3f;
+  --light-color: #7fdbff;
+  --dark-color: #333;
+  --light-gray: #f3f3f3;
+  --max-width: 1100px;
+}
+
+.category {
+  --sports-color: #f99500;
+  --ent-color: #a66bbe;
+  --tech-color: #009cff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background: var(--light-gray);
+}
+
+h2 {
+  text-align: center;
+  font-size: 3rem;
+  padding: 1rem;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.category {
+  display: inline-block;
+  color: #fff;
+  font-size: 0.55rem;
+  text-transform: uppercase;
+  padding: 0.4rem 0.6rem;
+  border-radius: 15px;
+  margin-bottom: 0.5rem;
+}
+
+.category-sports {
+  background: var(--sports-color);
+}
+.category-ent {
+  background: var(--ent-color);
+}
+.category-tech {
+  background: var(--tech-color);
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.card {
+  background: #fff;
+  padding: 1.4rem;
+  color: #111;
+}
+
+.card img {
+  width: 100%;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin-right: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#tupress {
+  font-size: 3rem;
+}
+
+#tupress:hover {
+  opacity: 0.8;
+}
+
+h1 {
+  margin-bottom: 0.8rem;
+}
+
+h1:hover {
+  opacity: 0.98;
+}
+
+.fas {
+  margin-right: 0.3rem;
+}
+#main-nav {
+  background: var(--dark-color);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  border-bottom: 1px solid black;
+  padding-bottom: 0.4rem;
+}
+
+#main-nav h1 {
+  justify-self: left;
+}
+
+#main-nav .container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1rem 1rem;
+  display: grid;
+  grid-template-columns: 6fr 3fr 3fr;
+  align-items: center;
+  overflow: hidden;
+}
+
+#main-nav .social-media a {
+  margin-right: 1rem;
+}
+
+#main-nav .social-media a:hover {
+  opacity: 0.5;
+}
+
+#main-nav ul {
+  justify-self: end;
+  display: flex;
+  justify-content: center;
+}
+
+#main-nav ul li {
+  padding: 0 1rem;
+  list-style: none;
+  font-weight: 800;
+  font-size: 1.2rem;
+  align-self: center;
+}
+
+#main-nav ul li:hover {
+  opacity: 0.5;
+}
+
+/* Showacase */
+.showcase {
+  background: #333;
+  padding: 2rem 5rem;
+
+  position: relative;
+}
+
+.showcase::before {
+  content: '';
+  background: url(../img/coronavirus-statistics-on-screen-3970330.jpg) no-repeat
+    center center/cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.showcase .showcase-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.showcase .showcase-content {
+  z-index: 1;
+}
+
+.showcase-content p {
+  margin-bottom: 1rem;
+}
+
+.showcase .showcase-content .readMore {
+  padding: 0.6rem;
+  margin: 0.7rem 0;
+  background: var(--primary-color);
+  border-radius: 0.2rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: #fff;
+  /* transform: scale(1);
+  transition: transform 300ms; */
+}
+
+.showcase .showcase-content .readMore:hover {
+  opacity: 0.9;
+}
+
+/* Articles Section */
+
+#articles {
+  margin: auto;
+  max-width: var(--max-width);
+  margin-bottom: 2rem;
+}
+
+#articles .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+/* Footer */
+
+#main-footer {
+  justify-content: center;
+  align-items: center;
+  line-height: 1.2;
+  margin: auto;
+  padding: 1rem 0;
+  background: var(--dark-color);
+  display: grid;
+}
+
+#main-footer a {
+  color: #fff;
+}
+
+#main-footer .footer-container {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr 2fr;
+  grid-gap: 1.5rem;
+  margin: auto;
+  padding: 1rem;
+}
+
+#main-footer .footer-container > *:last-child {
+  background: #444;
+  grid-column: 1 / span 4;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.8rem;
+}
+
+#main-footer .footer-container input[type='email'] {
+  width: 80%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+#main-footer .footer-container ul li a:hover {
+  opacity: 0.5;
+}
+
+.btn-primary {
+  padding: 0.4rem 0.6rem;
+  cursor: pointer;
+  color: #fff;
+  background: rgb(170, 5, 5);
+  border: none;
+  border-radius: 0.75rem;
+  width: 80%;
+}
